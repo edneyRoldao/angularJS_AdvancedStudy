@@ -1,0 +1,21 @@
+{
+  "name": "angularJS_AdvancedStudy",
+  "homepage": "https://github.com/edneyRoldao/angularJS_AdvancedStudy",
+  "authors": [
+    "edneyRoldao <edneyroldao@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "library",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.8"
+  }
+}
