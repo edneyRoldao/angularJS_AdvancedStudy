@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<title>1 first module</title>
+	<script type="text/javascript" src="../library/angular/angular.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/MoviesController.js"></script>
+</head>
+<body>
+
+<div ng-controller="MoviesController as movies">
+	<table>
+		<tr>
+			<th>Title</th>
+			<th>Date Deleased</th>
+			<th>Popular</th>
+			<th>Category</th>
+		</tr>
+		<tr ng-repeat="movie in movies.favorites">
+			<td> {{ movie.title }} </td>
+			<td> {{ movie.year }} </td>
+			<td ng-show="movie.popular"> it is pop </td>	
+			<td ng-hide="movie.popular"> it is not pop </td>
+			<td ng-switch="movie.category">
+				<span ng-switch-when="action">action movie</span>
+				<span ng-switch-when="fantasy">fantasy movie</span>
+				<span ng-switch-default>there's no category</span>
+			</td>						
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>
